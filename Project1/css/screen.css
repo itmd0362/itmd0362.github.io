@@ -254,10 +254,18 @@ input[type="text"], input[type="email"], input[type="button"] {
 @media screen and (max-width:960px) {
 
   img {
-    display: flex;
-    flex-direction: row;
+    object-fit: fill;
   }
 
+  #main-content {
+    display: flex;
+    flex-direction: row;
+}
+
+  #main-image {
+    max-width: 50%;
+    min-width: 50%;
+    border-radius: 0.5em 0.5em 0 0;
 }
 
 @media screen and (max-width: 480px) {
@@ -272,4 +280,5 @@ input[type="text"], input[type="email"], input[type="button"] {
   p {
     width: auto;
   }
+}
 }
